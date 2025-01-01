@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main-container" id="mc">
+    <section class="toggle" onclick="enableMode()">
+      <span class="t" id="t"></span>
+    </section>
+    <section id="showText" class="info"></section>
+     <div class="screen" id="screen">
+       0
+     </div>
+     
+     <div class="buttons container">
+       <button class="btns btn-clear" id="others">AC</button>
+       <button class="btns btn-del" id="others" onclick="deleteValues()">DEL</button>
+       <button class="btns btn-mod" id="operator">%</button>
+       <button class="btns btn-divide" id="operator">/</button>
+       
+       <button class="btns btn-7" id="nums">7</button>
+       <button class="btns btn-8" id="nums">8</button>
+       <button class="btns btn-9" id="nums">9</button>
+       <button class="btns btn-multiply"  id="operator">*</button>
+       
+       
+       <button class="btns btn-4" id="nums">4</button>
+       <button class="btns btn-5" id="nums">5</button>
+       <button class="btns btn-6" id="nums">6</button>
+       <button class="btns btn-minus" id="operator">-</button>
+ 
+       <button class="btns btn-1" id="nums">1</button>
+       <button class="btns btn-2" id="nums">2</button>
+       <button class="btns btn-3" id="nums">3</button>
+       <button class="btns btn-plus" id="operator">+</button>  
+       
+       <button class="btns btn-zero" id="nums">0</button>
+       <button class="btns btn-dot" id="dot" onclick="addDot()">.</button>
+       <button class="btns btn-equal" onclick="compute()" id="equals">=</button>
+     </div>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
